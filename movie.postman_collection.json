@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "b8711cda-6aa1-49d1-bf27-d1bdaba29fbe",
+		"name": "movie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add movie",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Fida\",\r\n    \"genre\": \"LOVE\",\r\n    \"format\": \"2D\",\r\n    \"cast\": \"varun,sai pallavi\",\r\n    \"language\": \"telugu\",\r\n    \"certification\": \"U/A\",\r\n    \"length\": \"100\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovie by name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie?name=ushpa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ushpa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovie by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie?name=ushpa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ushpa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie?name=ushpa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ushpa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

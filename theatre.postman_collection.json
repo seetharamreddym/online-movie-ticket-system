@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "e07c742a-9438-43cb-9afb-46bcdb5f37a7",
+		"name": "theatre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add theatre",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Prasda\",\r\n    \"city\": \"Hyderabad\",\r\n    \"location\": \"tankbund\",\r\n    \"pinCode\": \"500002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/theatre",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"theatre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add location",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"dsnr\",\r\n    \"stateName\": \"telangana\",\r\n    \"cityName\": \"Hyderabad\",\r\n    \"stateCode\": \"TG\",\r\n    \"countryName\": \"India\",\r\n    \"countryCode\": \"IN\",\r\n    \"pincode\": \"500023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/location",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get theatre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/theatre",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get theatre with screens",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/theatre/1/screen",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"theatre",
+						"1",
+						"screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add screen",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shiva\",\r\n    \"supportedFormat\": \"2D\",\r\n    \"screenSize\": \"10meter\",\r\n    \"soundSystem\":\"DTS-Dolby\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/theatre/1/screen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"1",
+						"screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add show1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shiva\",\r\n    \"supportedFormat\": \"2D\",\r\n    \"screenSize\": \"10meter\",\r\n    \"soundSystem\":\"DTS-Dolby\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/theatre/1/screen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"1",
+						"screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add show2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shiva\",\r\n    \"supportedFormat\": \"2D\",\r\n    \"screenSize\": \"10meter\",\r\n    \"soundSystem\":\"DTS-Dolby\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/theatre/1/screen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"1",
+						"screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add show3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shiva\",\r\n    \"supportedFormat\": \"2D\",\r\n    \"screenSize\": \"10meter\",\r\n    \"soundSystem\":\"DTS-Dolby\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/theatre/1/screen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"1",
+						"screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update show",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shiva\",\r\n    \"supportedFormat\": \"2D\",\r\n    \"screenSize\": \"10meter\",\r\n    \"soundSystem\":\"DTS-Dolby\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/theatre/1/screen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"1",
+						"screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete show",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shiva\",\r\n    \"supportedFormat\": \"2D\",\r\n    \"screenSize\": \"10meter\",\r\n    \"soundSystem\":\"DTS-Dolby\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/theatre/1/screen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"1",
+						"screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovie by name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movie?name=ushpa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ushpa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTheatres by movie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/movies/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movies",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
